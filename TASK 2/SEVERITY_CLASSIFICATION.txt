@@ -1,0 +1,13 @@
+SEVERITY CLASSIFICATION TABLE
+
+Alert Type: Trojan Malware Infection
+User/Host: bob / 10.0.0.5
+Severity: HIGH
+
+Alert Type: Unauthorized Internal Connection Attempts
+Users: charlie / david
+Severity: MEDIUM
+
+Alert Type: Normal Login Activity
+Users: bob / charlie
+Severity: LOW
