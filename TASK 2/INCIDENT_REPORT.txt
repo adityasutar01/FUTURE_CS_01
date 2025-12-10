@@ -1,0 +1,36 @@
+INCIDENT RESPONSE REPORT – SOC TASK 2
+
+Analyst: Aditya
+Tool: Elastic Security (Kibana)
+Date: 10 Dec 2025
+
+EXECUTIVE SUMMARY
+A Trojan malware infection was detected on host 10.0.0.5 under user bob. Additional internal reconnaissance activities were identified through multiple unauthorized connection attempts. Valid login activity was also observed. Based on triage logic, the malware incident is classified as high severity, connection attempts as medium, and login activity as low severity.
+
+INCIDENT TIMELINE
+- 06:13: Unauthorized connection attempt from internal network
+- 05:18: File access activities observed
+- 05:48: Connection attempt from user david
+- 06:01: Login success from bob
+- 08:30: MALWARE DETECTED (Trojan) on 10.0.0.5
+
+SEVERITY CLASSIFICATION
+- Trojan Detection: High
+- Unauthorized Internal Access Attempts: Medium
+- Login Success: Low
+
+IMPACT
+Malware may allow credential theft, persistence, lateral movement, or data compromise.
+
+ROOT CAUSE
+Likely internal compromise through malicious file execution.
+
+REMEDIATION
+- Isolate host 10.0.0.5
+- Perform antivirus scan
+- Reset impacted credentials
+- Patch and validate endpoint
+- Monitor network for lateral movement
+
+CONCLUSION
+Internal threats were successfully detected and triaged using SIEM methodology. Malware containment and security monitoring is required.
